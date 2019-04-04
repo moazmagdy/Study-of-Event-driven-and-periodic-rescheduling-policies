@@ -15,7 +15,7 @@ initial_lateness = zeros(7680,1) ;
 results_earliness = zeros(7680,1);
 level = 2;  %% Due dates tightness level: 1 --> loose, 2 --> Normal, 3 --> Tight
 first_schedule = zeros(25,6);   %% This schedule will be used for total cost objective
-for j = 800
+for j = 1: 7680
     j 
     [Jobsinfo, Breakdown_start, scenario ,policy,obj] = trial(j,Job10,Job25,num,Exp,level);
         %% Event-drive policy
